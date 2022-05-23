@@ -5,6 +5,7 @@ sum67([1, 2, 2]) → 5
 sum67([1, 2, 2, 6, 99, 99, 7]) → 5
 sum67([1, 1, 6, 7, 2]) → 4
 sum67([1, 6, 2, 6, 2, 7, 1, 6, 99, 99, 7]) → 2
+sum67([2, 2, 6, 7, 7]) → 11
 '''
 
 # function to calculate sum param: list of numbers

@@ -7,14 +7,13 @@ SPY GAME: Given a list of integers and returns True if it contains 007 in order
 
 '''
 
+
 def spy_game(nums):
-    # iterating upto length - 2 positions only
-    for i in range(len(nums) - 2):
-        # checking conditions
-        if nums[i] == 0 and nums[i+1] == 0 and nums[i+2] == 7:
-            return True
-    return False
+    # creating a list having spy code with extra char for avoid out of index
+    spy_code = [0, 0, 7, 'x']
 
+    for num in nums:
+        if num == code[0]:
+            code.pop(0)
 
-
-
+    return len(spy_code) == 1

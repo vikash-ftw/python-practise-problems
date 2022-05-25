@@ -9,11 +9,12 @@ SPY GAME: Given a list of integers and returns True if it contains 007 in order
 
 
 def spy_game(nums):
-    # creating a list having spy code with extra char for avoid out of index
+    # a list having spy code with extra char to avoid out of index issue while comparing @line:17
     spy_code = [0, 0, 7, 'x']
 
     for num in nums:
-        if num == code[0]:
-            code.pop(0)
+        # comparing
+        if num == spy_code[0]:
+            spy_code.pop(0)
 
     return len(spy_code) == 1
